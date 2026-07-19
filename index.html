@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio Link</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d0e12; /* Warna hitam legam */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Kotak Container Utama (Pas di Tengah Layar HP) */
+.card-container {
+    background-color: #161822; /* Warna abu-abu gelap */
+    width: 100%;
+    max-width: 360px; /* Ukuran pas untuk layar smartphone */
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #252836;
+}
+
+
+/* Teks Judul & Bio */
+h1 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.bio {
+    color: #8b949e;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Garis Pembatas Estetik */
+.divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0099ff, transparent);
+    margin-bottom: 25px;
+}
+
+/* Pembungkus Tombol */
+.links-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Desain Tombol Gaya Neon */
+.neon-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    color: #0099ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #1c1f2f;
+    border: 2px solid #0099ff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 153, 255, 0.1);
+}
+
+/* Efek Saat Tombol Disentuh / Di-hover */
+.neon-btn:hover {
+    background-color: #0099ff;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 153, 255, 0.6);
+    transform: translateY(-2px); /* Tombol sedikit naik ke atas */
+}
+ edit-->
+</style>
+<body>
+
+    <div class="card-container">
+        <!-- Foto Profil (Ganti link gambar di bawah sesuai foto klien/kamu) -->
+        <img src="gw_slebew.png" alt="Profile" style="width: 100px !important; height: 100px !important; border-radius: 50% !important; object-fit: cover !important; border: 3px solid #0099ff !important; box-shadow: 0 0 15px rgba(0, 153, 255, 0.4) !important; margin-bottom: 15px !important; display: inline-block !important;">
+        
+        <!-- Info Profil -->
+        <h1>"@dormire"</h1>
+        <p class="bio">Web & Mobile Developer | RPL SKANSA</p>
+        
+        <!-- Garis Pembatas Neon -->
+        <div class="divider"></div>
+
+        <!-- Daftar Tombol Sosial Media / Portofolio -->
+        <div class="links-wrapper">
+            <a href="https://github.com" target="_blank" class="neon-btn">Follow My GitHub 🐙</a>
+            <a href="https://instagram.com" target="_blank" class="neon-btn">Instagram Gue 📸</a>
+            <a href="https://wa.me/+6285709758897" target="_blank" class="neon-btn">Hubungi via WhatsApp 💬</a>
+        </div>
+    </div>
+
+</body>
+</html>
